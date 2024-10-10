@@ -177,6 +177,10 @@ span {
     color: var(--main-color);
 }
 
+#dwl {
+    font-size: 1.2rem;
+}
+
 .services-box h3 {
     font-size: 1.5rem;
 }
