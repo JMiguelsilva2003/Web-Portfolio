@@ -196,6 +196,10 @@ span {
     text-overflow: ellipsis;
 }
 
+.overlay.active {
+    display: block;
+}
+
 .portfolio {
     background-color: var(--bg-color-02);
 }
@@ -375,3 +379,81 @@ footer {
 }
 
 /*menu hamburguer*/
+
+
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: var(--bg-color-02);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: 50%;
+    color: var(--text-color);
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+/* Overlay covering the whole page */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px); /* Blur aplicado no overlay */
+    z-index: 999; /* Certifique-se que o overlay está sobre os elementos de fundo */
+    display: none; /* Iniciar escondido */
+}
+
+/* Modal or card content */
+.services-box.active {
+    z-index: 1000;
+    position: relative; /* Para garantir que o modal fique sobre o overlay */
+    background-color: var(--bg-color-02);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    color: var(--text-color);
+    transform: scale(1.05); /* Adicionar leve efeito */
+    transition: transform 0.3s ease; /* Suavizar a animação */
+}
+
+/* Botão de fechar */
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Mostrar o overlay quando ativo */
+.overlay.active {
+    display: block;
+}
