@@ -1,0 +1,18 @@
+@media screen and (max-width: 768px) {
+    .slide-content {
+        margin: 0 10px;
+    }
+
+    .swiper-navBtn {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .slide-container {
+        color: black;
+        max-width: 1200px;
+        width: 100%;
+        padding: 40px 0;
+    }
+}
