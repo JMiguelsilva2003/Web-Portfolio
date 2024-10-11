@@ -457,3 +457,101 @@ footer {
 .overlay.active {
     display: block;
 }
+
+/*txt animado*/
+
+.txt-animado > span{
+    position: relative;
+    
+}
+
+.txt-animado > span::before {
+    content: '';
+    color: var(--main-color);
+    animation: palavras 20s infinite;
+}
+
+.txt-animado > span::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid var(--main-color);
+    right: -10px;
+    animation:  cursor .8s infinite, digita 20s steps(15) infinite;
+    width: calc(100% + 12px);
+    background-color: var(--bg-color-01);
+}
+
+@keyframes digita {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 12px);
+    }
+}
+
+@keyframes cursor {
+    0% {
+        border-left: 2px solid var(--bg-color-01);
+    }
+}
+
+@keyframes palavras {
+    0%,33% {
+        content: "Web Developer";
+    }34%, 66% {
+        content: "Mobile Developer";
+    }
+    67%, 100% {
+        content: "Back-End Development";
+    }
+}
+
+.about-content > .txt-animado > span{
+    position: relative;
+    
+}
+
+.about-content > .txt-animado > span::before {
+    content: '';
+    color: var(--main-color);
+    animation: palavras 20s infinite;
+}
+
+.about-content > .txt-animado > span::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid var(--main-color);
+    right: -10px;
+    animation:  cursor .8s infinite, digita 20s steps(15) infinite;
+    width: calc(100% + 12px);
+    background-color: var(--bg-color-02);
+}
+
+@keyframes digita {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 12px);
+    }
+}
+
+@keyframes cursor {
+    0% {
+        border-left: 2px solid var(--bg-color-02);
+    }
+}
+
+@keyframes palavras {
+    0%,33% {
+        content: "Web Developer";
+    }34%, 66% {
+        content: "Mobile Developer";
+    }
+    67%, 100% {
+        content: "Back-End Development";
+    }
+}

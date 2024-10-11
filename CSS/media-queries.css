@@ -18,7 +18,7 @@
 }
 
 /*Smartphone (portrait)*/
-@media (min-width: 0px) {
+@media (min-width: 0px ) {
     .menu-hamburguer {
         display: block;
     }
@@ -69,15 +69,51 @@
     .services-box {
         width: 100%;
     }
+}
 
-    .portfolio-layer p{
+@media (min-width: 320px) and (max-width: 600px) {
+    .portfolio-layer p {
         display: -webkit-box !important;
-        -webkit-line-clamp: 3   !important;
+        -webkit-line-clamp: 3 !important;
         -webkit-box-orient: vertical !important;
         overflow: hidden !important;
         text-overflow: ellipsis !important;
     }
 }
+
+@media (min-width: 0px) and (max-width: 540px) {
+        .txt-animado > span {
+            display: block;
+            font-size: 25px;
+        }
+}
+
+@media (min-width: 0px) and (max-width: 389px) {
+    
+    .txt-animado > span::after {
+        animation: none;
+        content: 'Developer';
+        border-left: none;
+        color: var(--main-color);
+        right: none;
+        height: none;
+        width: none;
+    }
+    
+    .txt-animado > span::after {
+        animation:  none;
+    }
+    
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .about-content > .txt-animado > span {
+        display: block;
+        font-size: 21px;
+    }
+}
+
+
 
 /*Smartphone (landscape)*/
 @media (min-width:576px) {
