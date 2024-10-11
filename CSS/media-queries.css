@@ -69,6 +69,14 @@
     .services-box {
         width: 100%;
     }
+
+    .portfolio-layer p{
+        display: -webkit-box !important;
+        -webkit-line-clamp: 3   !important;
+        -webkit-box-orient: vertical !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
 }
 
 /*Smartphone (landscape)*/

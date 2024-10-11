@@ -1,3 +1,9 @@
+@media (min-width: 0px) and (max-width: 500px) {
+    .slide-container {
+        margin-top: 35px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .slide-content {
         margin: 0 10px;
